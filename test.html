@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+    <title>RANDOM APP</title>
+    <link rel="stylesheet" href="">
+
+    <script>
+        var xmlhttp = new XMLHttpRequest();
+
+        function getCountries() {
+
+            xmlhttp.onreadystatechange = function () {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    document.getElementById('container').innerHTML = xmlhttp.responseText;
+
+                } else {
+                    document.getElementById('container').innerHTML = "Waiting for server response";
+                }
+            }
+            xmlhttp.open('GET', 'http://localhost:8081/countries', true);
+            xmlhttp.send();
+
+        }
+
+        function getColors() {
+
+            xmlhttp.onreadystatechange = function () {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    document.getElementById('container').innerHTML = xmlhttp.responseText;
+
+                } else {
+                    document.getElementById('container').innerHTML = "Waiting for server response";
+                }
+            }
+            xmlhttp.open('GET', 'http://localhost:8081/colors', true);
+            xmlhttp.send();
+
+        }
+
+        function getCharacters() {
+
+            xmlhttp.onreadystatechange = function () {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    document.getElementById('container').innerHTML = xmlhttp.responseText;
+
+                } else {
+                    document.getElementById('container').innerHTML = "Waiting for server response";
+                }
+            }
+            xmlhttp.open('GET', 'http://localhost:8081/characters', true);
+            xmlhttp.send();
+
+        }
+
+        function geAll() {
+
+            xmlhttp.onreadystatechange = function () {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    document.getElementById('container').innerHTML = xmlhttp.responseText;
+
+                } else {
+                    document.getElementById('container').innerHTML = "Waiting for server response";
+                }
+            }
+            xmlhttp.open('GET', 'http://localhost:8081/blanda', true);
+            xmlhttp.send();
+
+        }
+
+        function getJSON() {
+
+            xmlhttp.onreadystatechange = function () {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    document.getElementById('container').innerHTML = xmlhttp.responseText;
+
+                } else {
+                    document.getElementById('container').innerHTML = "Waiting for server response";
+                }
+            }
+            xmlhttp.open('GET', 'http://localhost:8081/', true);
+            xmlhttp.send();
+
+        }
+    </script>
+</head>
+
+<body>
+
+    <div id="container">
+
+    </div>
+    <br>
+    <input type="button" value="Get Countries!" onclick="getCountries()" />
+    <br>
+    <input type="button" value="Get Colors!" onclick="getColors()" />
+    <br>
+    <input type="button" value="Get Characters!" onclick="getCharacters()" />
+    <br>
+    <input type="button" value="Get Characters!" onclick="geAll()" />
+    <br>
+    <input type="button" value="Get JSON!" onclick="getJSON()" />
+
+
+
+</body>
+
+</html>

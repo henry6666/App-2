@@ -1,0 +1,88 @@
+{
+    "album_type" : "single",
+    "artists" : [ {
+        "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1vCWHaC5f2uS3yhpwWbIA6"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1vCWHaC5f2uS3yhpwWbIA6",
+        "id" : "1vCWHaC5f2uS3yhpwWbIA6",
+        "name" : "Avicii",
+        "type" : "artist",
+        "uri" : "spotify:artist:1vCWHaC5f2uS3yhpwWbIA6"
+    } ],
+    "available_markets" : [ "CA", "MX", "US" ],
+    "copyrights" : [ {
+        "text" : "(C) 2015 Avicii Music AB under exclusive license to Universal Music AB",
+        "type" : "C"
+    }, {
+        "text" : "(P) 2015 Avicii Music AB under exclusive license to Universal Music AB",
+        "type" : "P"
+    } ],
+    "external_ids" : {
+        "upc" : "00602547381569"
+    },
+    "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/5fM4du8mdVKzG1hZDAfazY"
+    },
+    "genres" : [ ],
+    "href" : "https://api.spotify.com/v1/albums/5fM4du8mdVKzG1hZDAfazY",
+    "id" : "5fM4du8mdVKzG1hZDAfazY",
+    "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/acfe9d01bd25233e54075907e888630df3245b46",
+        "width" : 640
+    }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/d290a2ffdd89803e45d230563226d042c8458fb5",
+        "width" : 300
+    }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/f120b226c79219938211db6ec602684aa090aad2",
+        "width" : 64
+    } ],
+    "name" : "Feeling Good",
+    "popularity" : 56,
+    "release_date" : "2015-05-06",
+    "release_date_precision" : "day",
+    "tracks" : {
+        "href" : "https://api.spotify.com/v1/albums/5fM4du8mdVKzG1hZDAfazY/tracks?offset=0&limit=50",
+        "items" : [ {
+            "artists" : [ {
+                "external_urls" : {
+                    "spotify" : "https://open.spotify.com/artist/1vCWHaC5f2uS3yhpwWbIA6"
+                },
+                "href" : "https://api.spotify.com/v1/artists/1vCWHaC5f2uS3yhpwWbIA6",
+                "id" : "1vCWHaC5f2uS3yhpwWbIA6",
+                "name" : "Avicii",
+                "type" : "artist",
+                "uri" : "spotify:artist:1vCWHaC5f2uS3yhpwWbIA6"
+            } ],
+            "available_markets" : [ "CA", "MX", "US" ],
+            "disc_number" : 1,
+            "duration_ms" : 228938,
+            "explicit" : false,
+            "external_urls" : {
+                "spotify" : "https://open.spotify.com/track/7rc6L3UtM0uvwfpsl07GBL"
+            },
+            "href" : "https://api.spotify.com/v1/tracks/7rc6L3UtM0uvwfpsl07GBL",
+            "id" : "7rc6L3UtM0uvwfpsl07GBL",
+            "name" : "Feeling Good",
+            "preview_url" : "https://p.scdn.co/mp3-preview/cda830f4b48be69e9f0b860768049ebc407e2723",
+            "track_number" : 1,
+            "type" : "track",
+            "uri" : "spotify:track:7rc6L3UtM0uvwfpsl07GBL"
+        } ],
+        "limit" : 50,
+        "next" : null,
+        "offset" : 0,
+        "previous" : null,
+        "total" : 1
+    },
+    "type" : "album",
+    "uri" : "spotify:album:5fM4du8mdVKzG1hZDAfazY"
+}
+
+
+
+
+// url: https://api.myjson.com/bins/3ug34

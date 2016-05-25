@@ -1,0 +1,15 @@
+{
+    "first_name": "Henry",
+    "last_name": "Aguinaga",
+    "gender": "male",
+    "link": "https://www.facebook.com/app_scoped_user_id/10153135959135924/",
+    "picture": {
+        "data": {
+            "is_silhouette": false,
+            "url": "https://scontent.xx.fbcdn.net/v/t1.0-1/p50x50/11855651_10153056560000924_6719747308032339431_n.jpg?oh=ad6fe323a66beee3214d96f333aeeee7&oe=57CAD2DA"
+        }
+    },
+    "id": "10153135959135924"
+}
+
+// url: https://api.myjson.com/bins/2n5g0

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <!--<script>
+$(function () {
+$.getJSON('https://api.myjson.com/bins/mv9y', function (data) {
+document.write(data.firstName + '\n ' + data.lastName + '\n ' + data.age + '\n ' + data.phoneNumbers[1].number);
+});
+});
+</script>-->
+    <script>
+        $(document).ready(function () {
+
+            $('#getSpotifyData').click(function () {
+                $.getJSON('https://api.spotify.com/v1/albums/5fM4du8mdVKzG1hZDAfazY', function (results) {
+                    $('.results')
+                        .append('<h4> Artist Name: </h4> <p> ' + results.artists[0].name + '</p>')
+
+                    .append('<img src="' + results.images[1].url + '">')
+                        .append('<h4>Name</h4><p>' + results.name + '</p>')
+                        .append('<h4>Album Type</h4></p>' + results.album_type + '</p>')
+                        .append('<h4>Popularity</h4><p>' + results.popularity + '</p>')
+                        .append('<h4>Release Date</h4><p>' + results.release_date + '</p>' + '<hr>');
+
+                    //.append('<p>' + +'</p>')
+                    //.appendTo('.results');
+
+
+                });
+
+            });
+
+            $('#getFacebookData').click(function () {
+                $.get('https://api.myjson.com/bins/2n5g0', function (results) {
+                    $('.facebookResult')
+                        //.append('<h1> Artist Name: </h1> <p> ' + results.artists[0].name + '</p>')
+
+                    .append('<img src="' + results.picture.data.url + '">')
+                        .append('<p>Name: ' + results.first_name + '</p>')
+                        .append('</p>Gender: ' + results.gender + '</p>');
+
+                    //.append('<p>' + results.release_date + '</p>')
+
+                    // .append('<p>' + +'</p>')
+                    //.appendTo('.facebookResult');
+
+
+                });
+
+            });
+
+            // Data from OMDb API
+            $('#getMovieData').click(function () {
+                $.get('http://www.omdbapi.com/?t=che&y=&plot=short&r=json', function (results) {
+                    //$('<div class="movieResult"></div>')
+                    $('.movieResult')
+                        //.append('<h1> Artist Name: </h1> <p> ' + results.artists[0].name + '</p>')
+
+                    //.append('<img src="' + results.Poster + '">')
+                    .append('<p>Title: ' + results.Title + '</p>')
+                        .append('</p>Year: ' + results.Year + '</p>')
+                        .append('</p>Release: ' + results.Released + '</p>')
+                        .append('</p>Genre: ' + results.Genre + '</p>')
+                        .append('<p>Director: ' + results.Director + '</p>')
+                        .append('</p>Actors: ' + results.Actors + '</p>')
+                        .append('</p>Plot: ' + results.Plot + '</p>')
+                        .append('<p>Language: ' + results.Language + '</p>')
+                        .append('</p>Country: ' + results.Country + '</p>')
+                        .append('<p>Awards: ' + results.Awards + '</p>');
+
+                    // .append('<p>' + +'</p>')
+                    //.appendTo('.movieResult');
+                });
+
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Spotify</h1>
+        <button class="btn btn-default" id="getSpotifyData">
+            GET SPOTIFY DATA</button>
+
+        <div class="results">
+
+        </div>
+
+    </div>
+    <hr>
+
+    <div class="container">
+        <h1>Facebook</h1>
+        <button class="btn btn-default" id="getFacebookData">
+            GET FACEBOOK DATA</button>
+
+        <div class="facebookResult">
+
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <h1>Movie Data</h1>
+        <button class="btn btn-default" id="getMovieData">
+            GET MOVIE DATA</button>
+
+        <div class="movieResult">
+
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
